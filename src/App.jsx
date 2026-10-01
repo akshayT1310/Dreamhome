@@ -19,6 +19,7 @@ import ContactSection from './components/ContactSection';
 import Footer from './components/Footer';
 import FloatingActions from './components/FloatingActions';
 
+
 function App() {
   const [menuOpen, setMenuOpen] = useState(false);
 
@@ -95,6 +96,9 @@ function App() {
         {/* SERVICES */}
         <ServicesSection />
 
+         {/* WHY CHOOSE US */}
+        <WhyChooseUs />
+
         {/* 3D DESIGN */}
         <ThreeDDesign />
 
@@ -104,8 +108,7 @@ function App() {
         {/* DESIGN STYLES */}
         <DesignStyles />
 
-        {/* WHY CHOOSE US */}
-        <WhyChooseUs />
+       
 
         {/* PROCESS */}
         <ProcessSection />

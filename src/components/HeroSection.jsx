@@ -32,7 +32,7 @@ const HeroSection = ({ onNavigate }) => {
           preload="auto"
         >
           <source
-            src="/assets/assets/video/videohompage.mp4"
+            src="/assets/assets/video/homepagevideo.mp4"
             type="video/mp4"
           />
         </video>
@@ -42,7 +42,7 @@ const HeroSection = ({ onNavigate }) => {
 
         {/* ================= TOP INFO ================= */}
         <div className="chp-hero-top">
-          <span>CREATIVE HOME PLAN & DESIGN</span>
+          <span>Er Aman Shah | Founder & Principal Architect</span>
 
           <span>
             ARCHITECTURE · INTERIORS · STRUCTURE

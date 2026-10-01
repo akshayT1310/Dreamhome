@@ -3902,6 +3902,7 @@ textarea:focus-visible {
 /* =========================================================
    PROFESSIONAL FOUNDER DESK
    Creative Home Plan & Design
+   Premium Editorial Architecture UI
 ========================================================= */
 
 .professional-founder {
@@ -3909,12 +3910,14 @@ textarea:focus-visible {
   width: 100%;
   overflow: hidden;
 
-  padding: 110px 0 100px;
+  padding: 0;
 
   background: #f7f5ef;
   color: #172033;
 }
 
+
+/* subtle right-side architectural tone */
 .professional-founder::before {
   content: "";
 
@@ -3922,327 +3925,562 @@ textarea:focus-visible {
   top: 0;
   right: 0;
 
-  width: 38%;
+  width: 36%;
   height: 100%;
 
   background:
     linear-gradient(
       135deg,
-      rgba(185, 151, 78, 0.035),
+      rgba(185, 151, 78, 0.045),
       rgba(255, 255, 255, 0)
     );
 
   pointer-events: none;
 }
 
+
 .professional-founder__container {
   position: relative;
   z-index: 2;
 
-  width: min(1240px, calc(100% - 64px));
+  width: min(1380px, calc(100% - 96px));
 
   margin: 0 auto;
 }
 
+
 /* =========================================================
-   TOP
+   TOP BAR
 ========================================================= */
 
 .professional-founder__top {
+  min-height: 78px;
+
   display: flex;
   align-items: center;
   justify-content: space-between;
 
-  padding-bottom: 22px;
-
   border-bottom: 1px solid #dedbd3;
 }
+
 
 .professional-founder__eyebrow {
   display: flex;
   align-items: center;
   gap: 10px;
 
-  font-size: 10px;
+  font-family: "Manrope", Arial, sans-serif;
+  font-size: 9px;
   font-weight: 800;
 
-  letter-spacing: 0.2em;
+  letter-spacing: 0.21em;
+  text-transform: uppercase;
 
   color: #8c713c;
 }
 
+
 .professional-founder__dot {
-  width: 6px;
-  height: 6px;
+  width: 5px;
+  height: 5px;
+
+  flex-shrink: 0;
 
   border-radius: 50%;
 
   background: #b9974e;
 }
 
+
 .professional-founder__top-right {
   display: flex;
   align-items: center;
   gap: 24px;
 
-  font-size: 9px;
+  font-family: "Manrope", Arial, sans-serif;
+  font-size: 8px;
   font-weight: 700;
 
-  letter-spacing: 0.16em;
+  letter-spacing: 0.17em;
+  text-transform: uppercase;
 
   color: #9298a1;
 }
 
-.professional-founder__year {
-  display: flex;
-  align-items: center;
-  justify-content: center;
 
+.professional-founder__year {
   width: 30px;
   height: 30px;
+
+  display: grid;
+  place-items: center;
 
   border: 1px solid #d6c8a9;
   border-radius: 50%;
 
+  font-size: 8px;
+  letter-spacing: 0.04em;
+
   color: #9b7b3e;
 }
 
+
 /* =========================================================
-   MAIN GRID
+   MAIN EDITORIAL GRID
+
+   LEFT       = statement
+   CENTER     = founder image
+   RIGHT      = founder profile
 ========================================================= */
 
 .professional-founder__grid {
   display: grid;
 
-  grid-template-columns: 0.9fr 1.1fr;
+  grid-template-columns:
+    minmax(250px, 0.95fr)
+    minmax(210px, 0.70fr)
+    minmax(360px, 1.35fr);
 
-  gap: 120px;
+  gap: clamp(40px, 5vw, 82px);
 
-  padding: 95px 0 105px;
+  padding: 84px 0 100px;
+
+  align-items: start;
 }
 
+
 /* =========================================================
-   LEFT
+   LEFT — STATEMENT
 ========================================================= */
 
 .professional-founder__left {
-  display: flex;
+  min-width: 0;
 
-  gap: 32px;
-
-  align-items: flex-start;
+  display: block;
 }
 
-.professional-founder__vertical-label {
-  display: flex;
-
-  flex-direction: column;
-  align-items: center;
-
-  gap: 14px;
-
-  padding-top: 5px;
-
-  writing-mode: vertical-rl;
-
-  font-size: 9px;
-  font-weight: 800;
-
-  letter-spacing: 0.22em;
-
-  color: #9a7b42;
-}
-
-.professional-founder__vertical-label span {
-  writing-mode: horizontal-tb;
-
-  display: flex;
-
-  align-items: center;
-  justify-content: center;
-
-  width: 29px;
-  height: 29px;
-
-  border: 1px solid #d4c29e;
-
-  border-radius: 50%;
-
-  font-size: 9px;
-}
 
 .professional-founder__heading-wrap {
-  padding-top: 2px;
+  padding-top: 3px;
 }
+
 
 .professional-founder__small-title {
-  margin: 0 0 28px;
+  margin: 0 0 30px;
 
-  font-size: 10px;
+  font-family: "Manrope", Arial, sans-serif;
+  font-size: 9px;
   font-weight: 800;
 
-  letter-spacing: 0.2em;
+  letter-spacing: 0.20em;
+  text-transform: uppercase;
 
-  color: #8f7440;
+  color: #92743b;
 }
+
 
 .professional-founder__heading-wrap h2 {
   margin: 0;
 
   font-family:
+    "DM Sans",
     "Outfit",
     "Manrope",
     sans-serif;
 
-  font-size: clamp(54px, 5.4vw, 78px);
+  font-size: clamp(56px, 5.4vw, 82px);
 
-  line-height: 0.96;
+  line-height: 0.88;
 
   font-weight: 400;
 
-  letter-spacing: -0.055em;
+  letter-spacing: -0.065em;
 
-  color: #162033;
+  color: #142036;
 }
+
 
 .professional-founder__heading-wrap h2 em {
-  font-family: Georgia, serif;
+  font-family:
+    "Cormorant Garamond",
+    Georgia,
+    serif;
 
-  font-weight: 400;
+  font-size: 1.13em;
 
-  color: #b9974e;
+  font-weight: 500;
+
+  font-style: italic;
+
+  line-height: 0.75;
+
+  letter-spacing: -0.035em;
+
+  color: #b58b3c;
 }
+
 
 .professional-founder__heading-wrap h2 strong {
-  font-weight: 600;
+  font-weight: 700;
+
+  letter-spacing: -0.075em;
 }
 
+
+/* small editorial label below heading */
+
+.professional-founder__left::after {
+  content: "01  /  FOUNDER • PRINCIPAL";
+
+  display: block;
+
+  margin-top: 48px;
+
+  font-family: "Manrope", Arial, sans-serif;
+
+  font-size: 7px;
+  font-weight: 800;
+
+  letter-spacing: 0.16em;
+
+  color: #9b927f;
+}
+
+
 /* =========================================================
-   RIGHT
+   CENTER — FOUNDER PORTRAIT
+
+   Works with:
+   src="/assets/fndr.jpeg"
+========================================================= */
+
+.professional-founder__portrait-column {
+  min-width: 0;
+
+  padding-top: 2px;
+}
+
+
+.professional-founder__portrait-frame {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+
+  /* premium architectural curve */
+  border-radius: 0 0 110px 0;
+
+  background: #e7e2d9;
+}
+
+.professional-founder__portrait {
+  display: block;
+
+  width: 100%;
+  height: auto;
+
+  aspect-ratio: 0.80 / 1;
+
+  object-fit: cover;
+  object-position: center top;
+
+  border-radius: 0 0 110px 0;
+
+  filter: grayscale(7%);
+
+  transition:
+    transform 0.65s cubic-bezier(.2,.65,.25,1),
+    filter 0.45s ease;
+}
+
+.professional-founder__portrait-frame:hover
+.professional-founder__portrait {
+  transform: scale(1.025);
+  filter: grayscale(0%);
+}
+
+
+
+/* portrait number */
+
+.professional-founder__portrait-number {
+  position: absolute;
+
+  right: 12px;
+  bottom: 12px;
+
+  width: 30px;
+  height: 30px;
+
+  display: grid;
+  place-items: center;
+
+  border: 1px solid rgba(255,255,255,.70);
+
+  border-radius: 50%;
+
+  background: rgba(16,25,40,.18);
+
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+
+  font-family: "Manrope", Arial, sans-serif;
+
+  font-size: 8px;
+  font-weight: 700;
+
+  letter-spacing: .08em;
+
+  color: #fff;
+}
+
+
+/* portrait caption */
+
+.professional-founder__caption {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+
+  gap: 15px;
+
+  margin-top: 13px;
+}
+
+
+.professional-founder__caption > div {
+  display: flex;
+  flex-direction: column;
+
+  gap: 5px;
+}
+
+
+.professional-founder__caption-name {
+  font-family: "Manrope", Arial, sans-serif;
+
+  font-size: 8px;
+  font-weight: 800;
+
+  letter-spacing: .15em;
+
+  color: #172238;
+}
+
+
+.professional-founder__caption-role {
+  font-family: "Manrope", Arial, sans-serif;
+
+  font-size: 6.5px;
+  font-weight: 700;
+
+  line-height: 1.45;
+
+  letter-spacing: .12em;
+
+  color: #928875;
+}
+
+
+.professional-founder__caption-year {
+  padding-top: 1px;
+
+  font-family: "Manrope", Arial, sans-serif;
+
+  font-size: 8px;
+  font-weight: 700;
+
+  letter-spacing: .10em;
+
+  color: #a17b3a;
+}
+
+
+/* =========================================================
+   RIGHT — PROFILE
 ========================================================= */
 
 .professional-founder__right {
-  max-width: 610px;
+  min-width: 0;
+
+  max-width: none;
 }
+
+
+/* identity */
 
 .professional-founder__identity {
   display: flex;
   align-items: center;
 
-  gap: 18px;
+  gap: 16px;
 }
 
-.professional-founder__initial {
-  display: flex;
-  align-items: center;
-  justify-content: center;
 
-  width: 58px;
-  height: 58px;
+.professional-founder__initial {
+  width: 54px;
+  height: 54px;
+
+  display: grid;
+  place-items: center;
 
   flex-shrink: 0;
 
   border: 1px solid #cdbb91;
 
-  background: #f2eee5;
-
-  color: #8e7038;
+  background: rgba(242,238,229,.65);
 
   font-family: "Outfit", sans-serif;
 
-  font-size: 16px;
+  font-size: 12px;
   font-weight: 600;
 
-  letter-spacing: 0.05em;
+  letter-spacing: .10em;
+
+  color: #8e7038;
 }
+
+
+/* supports current JSX */
 
 .professional-founder__name {
   margin: 0;
 
   font-family:
+    "DM Sans",
     "Outfit",
     "Manrope",
     sans-serif;
 
-  font-size: 32px;
+  font-size: clamp(27px, 2.4vw, 36px);
 
   line-height: 1;
 
-  font-weight: 500;
+  font-weight: 400;
 
-  letter-spacing: -0.035em;
+  letter-spacing: -.045em;
 
   color: #172033;
 }
 
-.professional-founder__position {
-  margin: 8px 0 0;
 
-  font-size: 10px;
+.professional-founder__position {
+  margin: 7px 0 0;
+
+  font-family: "Manrope", Arial, sans-serif;
+
+  font-size: 8px;
   font-weight: 800;
 
-  letter-spacing: 0.15em;
+  letter-spacing: .15em;
+
   text-transform: uppercase;
 
   color: #8d949e;
 }
 
+
+/* discipline */
+
 .professional-founder__discipline {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+
+  gap: 7px;
+
   margin-top: 22px;
 
-  font-size: 12px;
+  font-family: "Manrope", Arial, sans-serif;
 
-  line-height: 1.7;
+  font-size: 9px;
+
+  line-height: 1.6;
 
   color: #6d7581;
 }
 
+
 .professional-founder__discipline span {
-  margin: 0 8px;
+  margin: 0;
 
   color: #b9974e;
 }
 
-.professional-founder__line {
+
+.professional-founder__discipline i {
+  font-style: normal;
+
+  color: #b9974e;
+}
+
+
+/* divider */
+
+.professional-founder__line,
+.professional-founder__divider {
   width: 100%;
   height: 1px;
 
-  margin: 30px 0;
+  margin: 28px 0 29px;
 
   background: #dedbd3;
 }
 
+
 /* =========================================================
-   MESSAGE
+   QUOTE
 ========================================================= */
 
 .professional-founder__quote {
-  max-width: 570px;
+  max-width: 650px;
 
   margin: 0;
 
-  font-family: Georgia, serif;
+  font-family:
+    "Cormorant Garamond",
+    Georgia,
+    serif;
 
-  font-size: clamp(23px, 2.2vw, 30px);
+  font-size: clamp(29px, 2.45vw, 40px);
 
-  line-height: 1.45;
+  line-height: 1.10;
 
-  font-weight: 400;
+  font-weight: 500;
 
-  color: #263247;
+  letter-spacing: -.018em;
+
+  color: #10243f;
 }
 
+
+/* =========================================================
+   BODY
+========================================================= */
+
 .professional-founder__body {
-  max-width: 575px;
+  max-width: 600px;
 
-  margin: 23px 0 0;
+  margin: 24px 0 0;
 
-  font-size: 14px;
+  font-family:
+    "DM Sans",
+    "Manrope",
+    sans-serif;
 
-  line-height: 1.9;
+  font-size: 12px;
+
+  line-height: 1.82;
 
   color: #707885;
 }
+
+
+/* if multiple body paragraphs exist */
+
+.professional-founder__body + .professional-founder__body {
+  margin-top: 13px;
+}
+
 
 /* =========================================================
    SIGNATURE
@@ -4255,48 +4493,61 @@ textarea:focus-visible {
 
   justify-content: space-between;
 
-  margin-top: 38px;
+  max-width: 600px;
 
-  max-width: 575px;
+  margin-top: 31px;
+
+  padding-top: 19px;
+
+  border-top: 1px solid #ded8cd;
 }
+
 
 .professional-founder__signature-name {
   display: block;
 
   font-family:
-    "Brush Script MT",
-    "Segoe Script",
-    cursive;
+    "Cormorant Garamond",
+    Georgia,
+    serif;
 
-  font-size: 35px;
+  font-size: 29px;
+
+  font-style: italic;
 
   line-height: 1;
 
   color: #172033;
 }
 
+
 .professional-founder__signature-line {
   display: block;
 
-  width: 130px;
+  width: 88px;
   height: 1px;
 
-  margin-top: 8px;
+  margin-top: 6px;
 
   background: #b9974e;
 }
 
-.professional-founder__signature-role {
-  padding-bottom: 1px;
 
-  font-size: 9px;
+.professional-founder__signature-role {
+  padding-bottom: 2px;
+
+  font-family: "Manrope", Arial, sans-serif;
+
+  font-size: 7px;
   font-weight: 800;
 
-  letter-spacing: 0.15em;
+  letter-spacing: .17em;
+
   text-transform: uppercase;
 
   color: #999fa8;
 }
+
 
 /* =========================================================
    CTA
@@ -4304,53 +4555,67 @@ textarea:focus-visible {
 
 .professional-founder__cta {
   display: inline-flex;
+
   align-items: center;
+
   justify-content: space-between;
 
-  gap: 42px;
+  gap: 28px;
 
-  margin-top: 38px;
+  min-width: 215px;
 
-  padding: 13px 14px 13px 20px;
+  height: 44px;
+
+  margin-top: 27px;
+
+  padding: 0 10px 0 18px;
 
   border: 1px solid #172033;
+
+  border-radius: 999px;
 
   background: #172033;
 
   color: #fff;
 
-  font-family: inherit;
+  font-family: "Manrope", Arial, sans-serif;
 
-  font-size: 10px;
+  font-size: 8px;
   font-weight: 800;
 
-  letter-spacing: 0.15em;
+  letter-spacing: .12em;
+
+  text-transform: uppercase;
 
   cursor: pointer;
 
   transition:
-    background 0.25s ease,
-    border-color 0.25s ease,
-    transform 0.25s ease;
+    background .25s ease,
+    border-color .25s ease,
+    transform .25s ease,
+    box-shadow .25s ease;
 }
 
-.professional-founder__cta-arrow {
-  display: flex;
 
-  align-items: center;
-  justify-content: center;
+.professional-founder__cta-arrow,
+.professional-founder__cta-icon {
+  width: 27px;
+  height: 27px;
 
-  width: 30px;
-  height: 30px;
+  display: grid;
+  place-items: center;
 
-  border: 1px solid rgba(255,255,255,0.3);
+  flex-shrink: 0;
+
+  border: 1px solid rgba(255,255,255,.28);
 
   border-radius: 50%;
 
-  font-size: 15px;
+  font-size: 13px;
 
-  transition: transform 0.3s ease;
+  transition: transform .3s ease;
 }
+
 
 .professional-founder__cta:hover {
   background: #b9974e;
@@ -4358,12 +4623,18 @@ textarea:focus-visible {
   border-color: #b9974e;
 
   transform: translateY(-2px);
+
+  box-shadow: 0 12px 25px rgba(23,32,51,.12);
 }
 
+
 .professional-founder__cta:hover
-.professional-founder__cta-arrow {
+.professional-founder__cta-arrow,
+.professional-founder__cta:hover
+.professional-founder__cta-icon {
   transform: rotate(45deg);
 }
+
 
 /* =========================================================
    EXPERTISE
@@ -4372,37 +4643,50 @@ textarea:focus-visible {
 .professional-founder__expertise {
   display: grid;
 
-  grid-template-columns: 0.65fr 1.35fr;
+  grid-template-columns: .65fr 1.35fr;
 
   border-top: 1px solid #dedbd3;
 }
 
+
 .professional-founder__expertise-intro {
-  padding: 38px 45px 30px 0;
+  padding: 38px 45px 34px 0;
 }
 
+
 .professional-founder__expertise-intro > span {
-  font-size: 9px;
+  font-family: "Manrope", Arial, sans-serif;
+
+  font-size: 8px;
   font-weight: 800;
 
-  letter-spacing: 0.2em;
+  letter-spacing: .20em;
+
+  text-transform: uppercase;
 
   color: #92743b;
 }
 
+
 .professional-founder__expertise-intro p {
-  margin: 20px 0 0;
+  margin: 18px 0 0;
 
-  font-family: "Outfit", sans-serif;
+  font-family:
+    "Cormorant Garamond",
+    Georgia,
+    serif;
 
-  font-size: 25px;
+  font-size: 29px;
 
-  line-height: 1.15;
+  line-height: 1.04;
 
-  letter-spacing: -0.035em;
+  letter-spacing: -.02em;
 
   color: #172033;
 }
+
+
+/* expertise grid */
 
 .professional-founder__expertise-grid {
   display: grid;
@@ -4410,35 +4694,48 @@ textarea:focus-visible {
   grid-template-columns: 1fr 1fr;
 }
 
+
 .professional-founder__expertise-grid article {
+  position: relative;
+
   display: grid;
 
   grid-template-columns: 25px 1fr;
 
   gap: 10px;
 
-  padding: 30px 25px;
+  min-height: 155px;
+
+  padding: 27px 25px;
 
   border-left: 1px solid #dedbd3;
+
   border-bottom: 1px solid #dedbd3;
 
-  transition: background 0.25s ease;
+  transition:
+    background .25s ease;
 }
+
 
 .professional-founder__expertise-grid article:hover {
   background: #f0ece3;
 }
 
+
 .professional-founder__expertise-grid article > span {
   padding-top: 3px;
 
-  font-size: 9px;
+  font-family: "Manrope", Arial, sans-serif;
+
+  font-size: 8px;
   font-weight: 800;
 
   color: #b9974e;
 }
 
-.professional-founder__expertise-grid h3 {
+
+.professional-founder__expertise-grid h3,
+.professional-founder__expertise-grid h4 {
   margin: 0;
 
   font-family: "Outfit", sans-serif;
@@ -4449,34 +4746,161 @@ textarea:focus-visible {
   color: #172033;
 }
 
+
 .professional-founder__expertise-grid p {
   max-width: 250px;
 
   margin: 8px 0 0;
 
-  font-size: 12px;
+  font-family:
+    "DM Sans",
+    "Manrope",
+    sans-serif;
+
+  font-size: 10px;
 
   line-height: 1.7;
 
   color: #7b828d;
 }
 
+
+/* =========================================================
+   OPTIONAL BOTTOM STATEMENT
+   Works if your JSX contains __bottom
+========================================================= */
+
+.professional-founder__bottom {
+  min-height: 76px;
+
+  display: grid;
+
+  grid-template-columns: 1fr auto 1fr;
+
+  align-items: center;
+
+  gap: 20px;
+
+  border-top: 1px solid #dedbd3;
+
+  font-family: "Manrope", Arial, sans-serif;
+
+  font-size: 7px;
+  font-weight: 800;
+
+  letter-spacing: .17em;
+
+  color: #978c79;
+}
+
+
+.professional-founder__bottom span:last-child {
+  text-align: right;
+}
+
+
+.professional-founder__bottom p {
+  margin: 0;
+
+  font-family:
+    "Cormorant Garamond",
+    Georgia,
+    serif;
+
+  font-size: 17px;
+
+  font-weight: 500;
+
+  letter-spacing: 0;
+
+  color: #26344b;
+}
+
+
+.professional-founder__bottom p em {
+  color: #aa803b;
+}
+
+
 /* =========================================================
    TABLET
 ========================================================= */
 
-@media (max-width: 950px) {
+@media (max-width: 1100px) {
+
+  .professional-founder__container {
+    width: min(100% - 60px, 1000px);
+  }
 
   .professional-founder__grid {
-    grid-template-columns: 1fr;
+    grid-template-columns:
+      minmax(210px, .9fr)
+      minmax(180px, .68fr)
+      minmax(300px, 1.25fr);
 
-    gap: 65px;
+    gap: 32px;
 
-    padding: 70px 0 80px;
+    padding: 70px 0 85px;
+  }
+
+  .professional-founder__heading-wrap h2 {
+    font-size: clamp(48px, 6vw, 68px);
+  }
+
+  .professional-founder__quote {
+    font-size: 31px;
+  }
+
+  .professional-founder__body {
+    font-size: 11px;
+  }
+
+  .professional-founder__expertise-grid article {
+    padding: 25px 20px;
+  }
+}
+
+
+/* =========================================================
+   TABLET / SMALL LAPTOP
+========================================================= */
+
+@media (max-width: 900px) {
+
+  .professional-founder__container {
+    width: calc(100% - 44px);
+  }
+
+  .professional-founder__grid {
+    grid-template-columns: .9fr .72fr;
+
+    gap: 35px;
+
+    padding: 62px 0 75px;
+  }
+
+  .professional-founder__left {
+    grid-column: 1 / 2;
+  }
+
+  .professional-founder__portrait-column {
+    grid-column: 2 / 3;
   }
 
   .professional-founder__right {
+    grid-column: 1 / -1;
+
     max-width: 720px;
+  }
+
+  .professional-founder__quote {
+    max-width: 700px;
+
+    font-size: 34px;
+  }
+
+  .professional-founder__body {
+    max-width: 680px;
   }
 
   .professional-founder__expertise {
@@ -4488,7 +4912,12 @@ textarea:focus-visible {
 
     border-bottom: 1px solid #dedbd3;
   }
+
+  .professional-founder__expertise-grid {
+    grid-template-columns: 1fr 1fr;
+  }
 }
+
 
 /* =========================================================
    MOBILE
@@ -4497,67 +4926,185 @@ textarea:focus-visible {
 @media (max-width: 600px) {
 
   .professional-founder {
-    padding: 75px 0 65px;
+    padding: 0;
   }
 
   .professional-founder__container {
     width: calc(100% - 32px);
   }
 
+  .professional-founder__top {
+    min-height: 68px;
+  }
+
+  .professional-founder__eyebrow {
+    font-size: 8px;
+
+    letter-spacing: .17em;
+  }
+
+  .professional-founder__top-right {
+    gap: 0;
+  }
+
   .professional-founder__top-right > span:first-child {
     display: none;
   }
 
+  .professional-founder__year {
+    width: 28px;
+    height: 28px;
+  }
+
+
+  /* main layout */
+
   .professional-founder__grid {
-    padding: 55px 0 65px;
-
-    gap: 55px;
-  }
-
-  .professional-founder__left {
-    gap: 18px;
-  }
-
-  .professional-founder__vertical-label {
-    display: none;
-  }
-
-  .professional-founder__heading-wrap h2 {
-    font-size: clamp(46px, 14vw, 64px);
-  }
-
-  .professional-founder__name {
-    font-size: 28px;
-  }
-
-  .professional-founder__position {
-    font-size: 9px;
-  }
-
-  .professional-founder__discipline {
-    font-size: 11px;
-  }
-
-  .professional-founder__quote {
-    font-size: 22px;
-  }
-
-  .professional-founder__body {
-    font-size: 13px;
-  }
-
-  .professional-founder__signature {
-    align-items: flex-start;
+    display: flex;
 
     flex-direction: column;
 
-    gap: 12px;
+    gap: 38px;
+
+    padding: 50px 0 65px;
+  }
+
+
+  /* statement */
+
+  .professional-founder__left {
+    order: 1;
+  }
+
+  .professional-founder__heading-wrap {
+    padding-top: 0;
+  }
+
+  .professional-founder__small-title {
+    margin-bottom: 22px;
+
+    font-size: 8px;
+  }
+
+  .professional-founder__heading-wrap h2 {
+    font-size: clamp(52px, 15vw, 72px);
+
+    line-height: .88;
+  }
+
+  .professional-founder__left::after {
+    margin-top: 28px;
+
+    font-size: 6.5px;
+  }
+
+
+  /* portrait */
+
+  .professional-founder__portrait-column {
+    order: 2;
+
+    width: min(100%, 360px);
+  }
+
+  .professional-founder__portrait {
+    aspect-ratio: .84 / 1;
+  }
+
+  .professional-founder__caption-name {
+    font-size: 8px;
+  }
+
+  .professional-founder__caption-role {
+    font-size: 6px;
+  }
+
+
+  /* profile */
+
+  .professional-founder__right {
+    order: 3;
+
+    width: 100%;
+  }
+
+  .professional-founder__identity {
+    gap: 13px;
+  }
+
+  .professional-founder__initial {
+    width: 48px;
+    height: 48px;
+
+    font-size: 11px;
+  }
+
+  .professional-founder__name {
+    font-size: 27px;
+  }
+
+  .professional-founder__position {
+    font-size: 7px;
+  }
+
+  .professional-founder__discipline {
+    margin-top: 18px;
+
+    font-size: 8px;
+
+    line-height: 1.7;
+  }
+
+  .professional-founder__line,
+  .professional-founder__divider {
+    margin: 23px 0 25px;
+  }
+
+  .professional-founder__quote {
+    font-size: 30px;
+
+    line-height: 1.08;
+  }
+
+  .professional-founder__body {
+    font-size: 11px;
+
+    line-height: 1.78;
+  }
+
+  .professional-founder__signature {
+    max-width: none;
+
+    margin-top: 27px;
+  }
+
+  .professional-founder__signature-name {
+    font-size: 27px;
   }
 
   .professional-founder__cta {
     width: 100%;
 
+    min-width: 0;
+
+    margin-top: 24px;
+
     gap: 15px;
+  }
+
+
+  /* expertise */
+
+  .professional-founder__expertise {
+    display: block;
+  }
+
+  .professional-founder__expertise-intro {
+    padding: 42px 0 28px;
+  }
+
+  .professional-founder__expertise-intro p {
+    font-size: 26px;
   }
 
   .professional-founder__expertise-grid {
@@ -4565,14 +5112,105 @@ textarea:focus-visible {
   }
 
   .professional-founder__expertise-grid article {
+    min-height: auto;
+
+    padding: 21px 0;
+
     border-left: 0;
+
+    border-top: 1px solid #dedbd3;
   }
 
-  .professional-founder__expertise-intro p {
-    font-size: 23px;
+  .professional-founder__expertise-grid article:first-child {
+    border-top: 0;
+  }
+
+  .professional-founder__expertise-grid p {
+    max-width: 85%;
+
+    font-size: 10px;
+  }
+
+
+  /* bottom */
+
+  .professional-founder__bottom {
+    min-height: auto;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    gap: 12px;
+
+    padding: 25px 0 30px;
+  }
+
+  .professional-founder__bottom span:last-child {
+    text-align: left;
+  }
+
+  .professional-founder__bottom p {
+    font-size: 18px;
   }
 }
 
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 400px) {
+
+  .professional-founder__container {
+    width: calc(100% - 28px);
+  }
+
+  .professional-founder__top-right {
+    display: none;
+  }
+
+  .professional-founder__heading-wrap h2 {
+    font-size: 51px;
+  }
+
+  .professional-founder__portrait-column {
+    width: 100%;
+  }
+
+  .professional-founder__quote {
+    font-size: 28px;
+  }
+
+  .professional-founder__name {
+    font-size: 25px;
+  }
+
+  .professional-founder__caption-name {
+    font-size: 7px;
+  }
+
+  .professional-founder__caption-role {
+    font-size: 5.8px;
+  }
+}
+
+
+/* =========================================================
+   ACCESSIBILITY / REDUCED MOTION
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+  .professional-founder__portrait,
+  .professional-founder__cta,
+  .professional-founder__cta-arrow,
+  .professional-founder__cta-icon {
+    transition: none;
+  }
+}
 /* =========================================================
    BRAND INTRO / COMPACT SOLUTIONS
    Creative Home Plan & Design

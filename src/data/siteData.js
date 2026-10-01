@@ -27,6 +27,7 @@ export const whatsappLink = (message = 'Hello Creative Home Plan & Design, I wou
 
 export const navItems = [
   { label: 'Home', href: '#home' },
+  { label: 'Gallery', href: '#gallery' },
   { label: 'Services', href: '#services' },
   { label: 'Projects', href: '#projects' },
   { label: 'Contact', href: '#contact' },

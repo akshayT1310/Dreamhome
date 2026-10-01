@@ -1,5 +1,6 @@
 import React from "react";
 
+
 const FounderDesk = ({ onNavigate }) => {
   const handleContact = () => {
     if (onNavigate) {
@@ -17,121 +18,170 @@ const FounderDesk = ({ onNavigate }) => {
     <section className="professional-founder" id="founder-desk">
       <div className="professional-founder__container">
 
-        {/* TOP BAR */}
-        <div className="professional-founder__top">
+        {/* =========================================
+            TOP BAR
+        ========================================= */}
+        <header className="professional-founder__top">
           <div className="professional-founder__eyebrow">
             <span className="professional-founder__dot" />
-            FOUNDER'S DESK
+            <span>FOUNDER'S DESK</span>
           </div>
 
           <div className="professional-founder__top-right">
             <span>CREATIVE HOME PLAN & DESIGN</span>
             <span className="professional-founder__year">2021</span>
           </div>
-        </div>
+        </header>
 
-        {/* MAIN CONTENT */}
+
+        {/* =========================================
+            MAIN EDITORIAL AREA
+        ========================================= */}
         <div className="professional-founder__grid">
 
-          {/* LEFT */}
-          <div className="professional-founder__left">
+          {/* =======================================
+              LEFT — STATEMENT
+          ======================================= */}
+          <div className="professional-founder__statement">
 
-            
+            <p className="professional-founder__small-title">
+              DESIGNING WITH INTENT
+            </p>
 
-            <div className="professional-founder__heading-wrap">
-              <p className="professional-founder__small-title">
-                DESIGNING WITH INTENT
-              </p>
+            <h2 className="professional-founder__headline">
+              Built on
+              <br />
+              <em>vision.</em>
+              <br />
+              Driven by
+              <br />
+              <strong>purpose.</strong>
+            </h2>
 
-              <h2>
-                Built on
-                <br />
-                <em>vision.</em>
-                <br />
-                Driven by
-                <br />
-                <strong>purpose.</strong>
-              </h2>
+            <div className="professional-founder__statement-meta">
+              <span>01</span>
+              <span className="professional-founder__meta-line" />
+              <span>FOUNDER / PRINCIPAL</span>
             </div>
 
           </div>
 
-          {/* RIGHT */}
-          <div className="professional-founder__right">
 
-            {/* FOUNDER IDENTITY */}
+          {/* =======================================
+              CENTER — PORTRAIT
+          ======================================= */}
+          <div className="professional-founder__portrait-column">
+
+            <div className="professional-founder__portrait-frame">
+
+              <img
+                src="/assets/fndr.jpeg"
+                alt="Er. Aman Shah - Founder & Principal Consultant"
+                className="professional-founder__portrait"
+              />
+
+              <div className="professional-founder__portrait-number">
+                01
+              </div>
+
+            </div>
+
+            <div className="professional-founder__caption">
+              <div>
+                <span className="professional-founder__caption-name">
+                  ER. AMAN SHAH
+                </span>
+
+                <span className="professional-founder__caption-role">
+                  FOUNDER & PRINCIPAL CONSULTANT
+                </span>
+              </div>
+
+              <span className="professional-founder__caption-year">
+                2021
+              </span>
+            </div>
+
+          </div>
+
+
+          {/* =======================================
+              RIGHT — FOUNDER PROFILE
+          ======================================= */}
+          <div className="professional-founder__profile">
+
+            {/* IDENTITY */}
             <div className="professional-founder__identity">
 
               <div className="professional-founder__initial">
                 AS
               </div>
 
-              <div>
-                <p className="professional-founder__name">
-                  Er. Aman Shah
-                </p>
+              <div className="professional-founder__identity-text">
+                <h3>Er. Aman Shah</h3>
 
-                <p className="professional-founder__position">
+                <p>
                   Founder & Principal Consultant
                 </p>
               </div>
 
             </div>
 
+
+            {/* DISCIPLINES */}
             <div className="professional-founder__discipline">
-              Civil Engineer
-              <span>•</span>
-              Architect
-              <span>•</span>
-              Interior & Structural Consultant
+              <span>Civil Engineer</span>
+              <i>•</i>
+              <span>Architect</span>
+              <i>•</i>
+              <span>Interior & Structural Consultant</span>
             </div>
 
-            {/* LINE */}
-            <div className="professional-founder__line" />
 
-            {/* MESSAGE */}
+            {/* DIVIDER */}
+            <div className="professional-founder__divider" />
+
+
+            {/* QUOTE */}
+            <blockquote className="professional-founder__quote">
+              “A well-designed space is not simply
+              beautiful. It is thoughtful, functional
+              and made for the way people live.”
+            </blockquote>
+
+
+            {/* DESCRIPTION */}
             <div className="professional-founder__message">
 
-              <p className="professional-founder__quote">
-                “A well-designed space is not simply
-                beautiful. It is thoughtful, functional
-                and made for the way people live.”
-              </p>
-
-              <p className="professional-founder__body">
+              <p>
                 At Creative Home Plan & Design, our approach
-                begins with understanding the people,
-                purpose and possibilities behind every project.
-                Architecture, interiors and structural
-                expertise are brought together to create
-                spaces that are balanced, practical and
-                timeless.
+                begins with understanding the people, purpose
+                and possibilities behind every project.
               </p>
 
-              <p className="professional-founder__body">
-                From the first concept to the final detail,
-                every decision is guided by clarity,
-                functionality and long-term value.
+              <p>
+                Architecture, interiors and structural
+                expertise come together to create spaces
+                that are balanced, practical and timeless.
               </p>
 
             </div>
 
-            {/* SIGNATURE AREA */}
+
+            {/* SIGNATURE */}
             <div className="professional-founder__signature">
 
-              <div>
-                <span className="professional-founder__signature-name">
-                  Aman Shah
-                </span>
-
-                <span className="professional-founder__signature-line" />
+              <div className="professional-founder__signature-main">
+                <span>Aman Shah</span>
+                <i />
               </div>
 
               <span className="professional-founder__signature-role">
-                Founder
+                FOUNDER
               </span>
 
             </div>
+
 
             {/* CTA */}
             <button
@@ -141,78 +191,155 @@ const FounderDesk = ({ onNavigate }) => {
             >
               <span>DISCUSS YOUR PROJECT</span>
 
-              <span className="professional-founder__cta-arrow">
+              <span className="professional-founder__cta-icon">
                 ↗
               </span>
             </button>
 
           </div>
+
         </div>
 
-        {/* PROFESSIONAL EXPERTISE */}
+
+        {/* =========================================
+            EXPERTISE
+        ========================================= */}
         <div className="professional-founder__expertise">
 
-          <div className="professional-founder__expertise-intro">
-            <span>CORE EXPERTISE</span>
+          <div className="professional-founder__expertise-heading">
 
-            <p>
-              One integrated approach
-              <br />
-              to better spaces.
-            </p>
+            <div>
+              <span>CORE EXPERTISE</span>
+
+              <p>
+                One integrated approach
+                <br />
+                to better spaces.
+              </p>
+            </div>
+
+            <span className="professional-founder__expertise-count">
+              04
+            </span>
+
           </div>
+
 
           <div className="professional-founder__expertise-grid">
 
-            <article>
-              <span>01</span>
+            {/* 01 */}
+            <article className="professional-founder__expertise-item">
+
+              <div className="professional-founder__expertise-number">
+                01
+              </div>
 
               <div>
-                <h3>Architecture</h3>
+                <h4>Architecture</h4>
+
                 <p>
                   Concept, planning and spatial design
                   developed around purpose and context.
                 </p>
               </div>
+
+              <span className="professional-founder__expertise-arrow">
+                ↗
+              </span>
+
             </article>
 
-            <article>
-              <span>02</span>
+
+            {/* 02 */}
+            <article className="professional-founder__expertise-item">
+
+              <div className="professional-founder__expertise-number">
+                02
+              </div>
 
               <div>
-                <h3>Interior Design</h3>
+                <h4>Interior Design</h4>
+
                 <p>
                   Refined interiors balancing material,
                   light, comfort and functionality.
                 </p>
               </div>
+
+              <span className="professional-founder__expertise-arrow">
+                ↗
+              </span>
+
             </article>
 
-            <article>
-              <span>03</span>
+
+            {/* 03 */}
+            <article className="professional-founder__expertise-item">
+
+              <div className="professional-founder__expertise-number">
+                03
+              </div>
 
               <div>
-                <h3>Structural Consultancy</h3>
+                <h4>Structural Consultancy</h4>
+
                 <p>
                   Practical engineering solutions focused
                   on safety, stability and durability.
                 </p>
               </div>
+
+              <span className="professional-founder__expertise-arrow">
+                ↗
+              </span>
+
             </article>
 
-            <article>
-              <span>04</span>
+
+            {/* 04 */}
+            <article className="professional-founder__expertise-item">
+
+              <div className="professional-founder__expertise-number">
+                04
+              </div>
 
               <div>
-                <h3>Project Consultancy</h3>
+                <h4>Project Consultancy</h4>
+
                 <p>
                   Professional guidance from the initial
                   idea through planning and execution.
                 </p>
               </div>
+
+              <span className="professional-founder__expertise-arrow">
+                ↗
+              </span>
+
             </article>
 
           </div>
+        </div>
+
+
+        {/* =========================================
+            BOTTOM STATEMENT
+        ========================================= */}
+        <div className="professional-founder__bottom">
+
+          <span>
+            CREATIVE HOME PLAN & DESIGN
+          </span>
+
+          <p>
+            Designed with purpose.
+            <em> Built for living.</em>
+          </p>
+
+          <span>
+            IND / 2021 — PRESENT
+          </span>
+
         </div>
 
       </div>
