@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+
 import Navbar from './components/Navbar';
 import HeroSection from './components/HeroSection';
 import BrandIntro from './components/BrandIntro';
@@ -21,9 +22,13 @@ import FloatingActions from './components/FloatingActions';
 function App() {
   const [menuOpen, setMenuOpen] = useState(false);
 
+  /* =========================================================
+     HEADER SCROLL EFFECT
+  ========================================================= */
   useEffect(() => {
     const handleScroll = () => {
       const header = document.querySelector('.site-header');
+
       if (!header) return;
 
       if (window.scrollY > 20) {
@@ -34,43 +39,113 @@ function App() {
     };
 
     window.addEventListener('scroll', handleScroll);
+
+    // Run once on initial load
     handleScroll();
 
-    return () => window.removeEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
   }, []);
 
+  /* =========================================================
+     SMOOTH NAVIGATION
+  ========================================================= */
   const handleNavigate = (href) => {
+    if (!href) return;
+
     const target = document.querySelector(href);
+
     if (target) {
-      target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      target.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start',
+      });
     }
+
+    // Close mobile menu
     setMenuOpen(false);
   };
 
   return (
-    <div className="app-shell">
-      <Navbar menuOpen={menuOpen} setMenuOpen={setMenuOpen} onNavigate={handleNavigate} />
+    <div className="App">
 
-      <main>
-        <HeroSection onNavigate={handleNavigate} />
+      {/* =====================================================
+          NAVBAR
+      ====================================================== */}
+      <Navbar
+        menuOpen={menuOpen}
+        setMenuOpen={setMenuOpen}
+        onNavigate={handleNavigate}
+      />
+
+      {/* =====================================================
+          MAIN CONTENT
+      ====================================================== */}
+      <main className="main-content">
+
+        {/* HERO */}
+        <HeroSection
+          onNavigate={handleNavigate}
+        />
+
+        {/* BRAND INTRO */}
         <BrandIntro />
+
+        {/* SERVICES */}
         <ServicesSection />
+
+        {/* 3D DESIGN */}
         <ThreeDDesign />
+
+        {/* HOUSE PLANS */}
         <HousePlans />
+
+        {/* DESIGN STYLES */}
         <DesignStyles />
+
+        {/* WHY CHOOSE US */}
         <WhyChooseUs />
+
+        {/* PROCESS */}
         <ProcessSection />
+
+        {/* PROJECTS */}
         <ProjectsSection />
+
+        {/* BEFORE / AFTER */}
         <BeforeAfter />
+
+        {/* STATS */}
         <StatsSection />
+
+        {/* TESTIMONIALS */}
         <Testimonials />
-        <AboutSection />
+
+        
+
+        {/* CTA */}
         <CTASection />
+
+        {/* CONTACT */}
         <ContactSection />
+        {/* ABOUT */}
+        <AboutSection />
+
       </main>
 
-      <Footer onNavigate={handleNavigate} />
+      {/* =====================================================
+          FOOTER
+      ====================================================== */}
+      <Footer
+        onNavigate={handleNavigate}
+      />
+
+      {/* =====================================================
+          FLOATING ACTION BUTTONS
+      ====================================================== */}
       <FloatingActions />
+
     </div>
   );
 }

@@ -1,0 +1,1207 @@
+/* =========================================================
+   BRAND INTRO / COMPACT SOLUTIONS
+   Creative Home Plan & Design
+========================================================= */
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=DM+Sans:wght@400;500;600&family=Manrope:wght@400;500;600;700;800&display=swap');
+
+
+/* =========================================================
+   ROOT
+========================================================= */
+
+.compact-solutions {
+  --cs-bg: #f7f5ef;
+  --cs-bg-soft: #f1eee6;
+  --cs-white: #ffffff;
+
+  --cs-ink: #172033;
+  --cs-ink-soft: #263247;
+
+  --cs-text: #68717e;
+  --cs-muted: #818792;
+
+  --cs-gold: #b9974e;
+  --cs-gold-dark: #96783f;
+  --cs-gold-light: #d8ccb4;
+
+  --cs-border: #ddd9d0;
+  --cs-border-light: #e7e3da;
+
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+
+  padding: clamp(65px, 8vw, 105px) 0
+    clamp(50px, 6vw, 75px);
+
+  background: var(--cs-bg);
+  color: var(--cs-ink);
+
+  isolation: isolate;
+  box-sizing: border-box;
+}
+
+
+/* =========================================================
+   DECORATIVE BACKGROUND
+========================================================= */
+
+.compact-solutions::before {
+  content: '';
+
+  position: absolute;
+
+  width: clamp(300px, 42vw, 600px);
+  height: clamp(300px, 42vw, 600px);
+
+  top: clamp(-260px, -18vw, -130px);
+  right: clamp(-260px, -18vw, -110px);
+
+  border: 1px solid rgba(185, 151, 78, 0.10);
+
+  border-radius: 50%;
+
+  pointer-events: none;
+}
+
+
+.compact-solutions::after {
+  content: '';
+
+  position: absolute;
+
+  width: 420px;
+  height: 420px;
+
+  top: -180px;
+  right: -150px;
+
+  border-radius: 50%;
+
+  background:
+    radial-gradient(
+      circle,
+      rgba(185, 151, 78, 0.065),
+      transparent 68%
+    );
+
+  pointer-events: none;
+}
+
+
+/* =========================================================
+   CONTAINER
+========================================================= */
+
+.compact-solutions__container {
+  position: relative;
+  z-index: 2;
+
+  width: min(
+    1180px,
+    calc(100% - 48px)
+  );
+
+  margin: 0 auto;
+
+  box-sizing: border-box;
+}
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.compact-solutions__header {
+  width: 100%;
+
+  margin-bottom:
+    clamp(
+      30px,
+      4vw,
+      45px
+    );
+}
+
+
+/* =========================================================
+   SECTION LABEL
+========================================================= */
+
+.compact-solutions__label {
+  display: flex;
+
+  align-items: center;
+
+  gap: 10px;
+
+  margin-bottom:
+    clamp(
+      17px,
+      2vw,
+      23px
+    );
+
+  font-family: 'Manrope', sans-serif;
+
+  font-size: 9px;
+
+  font-weight: 800;
+
+  letter-spacing: 0.22em;
+
+  color: var(--cs-gold-dark);
+
+  white-space: nowrap;
+}
+
+
+.compact-solutions__label-line {
+  display: block;
+
+  width: 31px;
+  height: 1px;
+
+  flex-shrink: 0;
+
+  background: var(--cs-gold);
+}
+
+
+/* =========================================================
+   HEADING AREA
+========================================================= */
+
+.compact-solutions__heading {
+  display: grid;
+
+  grid-template-columns:
+    minmax(0, 1fr)
+    minmax(250px, 330px);
+
+  align-items: end;
+
+  gap:
+    clamp(
+      35px,
+      6vw,
+      90px
+    );
+
+  padding-bottom:
+    clamp(
+      28px,
+      4vw,
+      42px
+    );
+
+  border-bottom:
+    1px solid var(--cs-border);
+
+  box-sizing: border-box;
+}
+
+
+/* =========================================================
+   MAIN HEADING
+========================================================= */
+
+.compact-solutions__heading h2 {
+  min-width: 0;
+
+  margin: 0;
+
+  font-family:
+    'Cormorant Garamond',
+    Georgia,
+    serif;
+
+  font-size:
+    clamp(
+      50px,
+      6.2vw,
+      80px
+    );
+
+  line-height: 0.86;
+
+  font-weight: 500;
+
+  letter-spacing: -0.045em;
+
+  color: var(--cs-ink);
+}
+
+
+.compact-solutions__heading h2 em {
+  font-family:
+    'Cormorant Garamond',
+    Georgia,
+    serif;
+
+  font-weight: 600;
+
+  font-style: italic;
+
+  color: var(--cs-gold);
+}
+
+
+/* =========================================================
+   INTRO TEXT
+========================================================= */
+
+.compact-solutions__intro {
+  width: 100%;
+  max-width: 330px;
+
+  box-sizing: border-box;
+}
+
+
+.compact-solutions__intro-title {
+  margin: 0 0 12px;
+
+  font-family: 'Manrope', sans-serif;
+
+  font-size:
+    clamp(
+      13px,
+      1.25vw,
+      15px
+    );
+
+  line-height: 1.45;
+
+  font-weight: 700;
+
+  letter-spacing: -0.02em;
+
+  color: var(--cs-ink-soft);
+}
+
+
+.compact-solutions__intro > p:last-child {
+  margin: 0;
+
+  font-family: 'DM Sans', sans-serif;
+
+  font-size: 11px;
+
+  line-height: 1.75;
+
+  font-weight: 400;
+
+  color: var(--cs-text);
+}
+
+
+/* =========================================================
+   SERVICES GRID
+========================================================= */
+
+.compact-solutions__grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(
+      3,
+      minmax(0, 1fr)
+    );
+
+  width: 100%;
+
+  border-top:
+    1px solid var(--cs-border);
+
+  border-left:
+    1px solid var(--cs-border);
+
+  box-sizing: border-box;
+}
+
+
+/* =========================================================
+   SERVICE CARD
+========================================================= */
+
+.compact-service {
+  position: relative;
+
+  display: grid;
+
+  grid-template-columns:
+    28px
+    minmax(0, 1fr)
+    24px;
+
+  align-items: start;
+
+  gap: 10px;
+
+  min-width: 0;
+
+  min-height: 112px;
+
+  padding:
+    20px
+    18px;
+
+  border-right:
+    1px solid var(--cs-border);
+
+  border-bottom:
+    1px solid var(--cs-border);
+
+  background:
+    rgba(
+      247,
+      245,
+      239,
+      0.82
+    );
+
+  box-sizing: border-box;
+
+  transition:
+    background 0.3s ease,
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+
+/* =========================================================
+   CARD HOVER
+========================================================= */
+
+.compact-service:hover {
+  z-index: 3;
+
+  background: var(--cs-bg-soft);
+
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 12px 28px
+    rgba(
+      23,
+      32,
+      51,
+      0.055
+    );
+}
+
+
+/* =========================================================
+   SERVICE NUMBER
+========================================================= */
+
+.compact-service__number {
+  padding-top: 2px;
+
+  font-family: 'Manrope', sans-serif;
+
+  font-size: 8px;
+
+  line-height: 1;
+
+  font-weight: 800;
+
+  letter-spacing: 0.12em;
+
+  color: var(--cs-gold);
+
+  white-space: nowrap;
+}
+
+
+/* =========================================================
+   SERVICE CONTENT
+========================================================= */
+
+.compact-service__content {
+  min-width: 0;
+}
+
+
+/* =========================================================
+   SERVICE TITLE
+========================================================= */
+
+.compact-service h3 {
+  margin: 0;
+
+  font-family: 'Manrope', sans-serif;
+
+  font-size:
+    clamp(
+      12px,
+      1.15vw,
+      14px
+    );
+
+  line-height: 1.28;
+
+  font-weight: 700;
+
+  letter-spacing: -0.02em;
+
+  color: var(--cs-ink-soft);
+
+  overflow-wrap: anywhere;
+}
+
+
+/* =========================================================
+   SERVICE DESCRIPTION
+========================================================= */
+
+.compact-service p {
+  margin: 6px 0 0;
+
+  font-family: 'DM Sans', sans-serif;
+
+  font-size: 9.5px;
+
+  line-height: 1.5;
+
+  font-weight: 400;
+
+  color: var(--cs-muted);
+}
+
+
+/* =========================================================
+   ARROW
+========================================================= */
+
+.compact-service__arrow {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  width: 22px;
+  height: 22px;
+
+  flex-shrink: 0;
+
+  border:
+    1px solid var(--cs-gold-light);
+
+  border-radius: 50%;
+
+  color: var(--cs-gold-dark);
+
+  box-sizing: border-box;
+
+  transition:
+    background 0.3s ease,
+    border-color 0.3s ease,
+    color 0.3s ease,
+    transform 0.3s ease;
+}
+
+
+/* Arrow SVG */
+
+.compact-service__arrow svg {
+  display: block;
+
+  width: 13px;
+  height: 13px;
+}
+
+
+/* Arrow Hover */
+
+.compact-service:hover
+.compact-service__arrow {
+  background: var(--cs-ink);
+
+  border-color: var(--cs-ink);
+
+  color: #ffffff;
+
+  transform: rotate(45deg);
+}
+
+
+/* =========================================================
+   PROJECT TYPES FOOTER
+========================================================= */
+
+.compact-solutions__footer {
+  display: flex;
+
+  align-items: center;
+
+  gap:
+    clamp(
+      18px,
+      3vw,
+      34px
+    );
+
+  width: 100%;
+
+  padding-top: 25px;
+
+  box-sizing: border-box;
+}
+
+
+/* Footer label */
+
+.compact-solutions__footer-label {
+  flex-shrink: 0;
+
+  font-family: 'Manrope', sans-serif;
+
+  font-size: 8px;
+
+  font-weight: 800;
+
+  letter-spacing: 0.19em;
+
+  color: var(--cs-gold-dark);
+}
+
+
+/* Project types */
+
+.compact-solutions__types {
+  display: flex;
+
+  align-items: center;
+
+  flex-wrap: wrap;
+
+  gap: 8px;
+
+  min-width: 0;
+
+  font-family: 'Manrope', sans-serif;
+
+  font-size: 10px;
+
+  line-height: 1.7;
+
+  font-weight: 500;
+
+  color: var(--cs-text);
+}
+
+
+/* Individual project */
+
+.compact-project-type {
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 8px;
+
+  white-space: nowrap;
+}
+
+
+/* Dot */
+
+.compact-project-type i {
+  font-style: normal;
+
+  color: var(--cs-gold);
+}
+
+
+/* =========================================================
+   BOTTOM STATEMENT
+========================================================= */
+
+.compact-solutions__statement {
+  display: flex;
+
+  align-items: flex-end;
+
+  justify-content: space-between;
+
+  gap: 30px;
+
+  width: 100%;
+
+  margin-top:
+    clamp(
+      32px,
+      4vw,
+      48px
+    );
+
+  padding-top: 27px;
+
+  border-top:
+    1px solid var(--cs-border);
+
+  box-sizing: border-box;
+}
+
+
+/* Brand */
+
+.compact-solutions__statement > span {
+  flex-shrink: 0;
+
+  font-family: 'Manrope', sans-serif;
+
+  font-size: 8px;
+
+  line-height: 1.3;
+
+  font-weight: 800;
+
+  letter-spacing: 0.17em;
+
+  color: var(--cs-gold-dark);
+}
+
+
+/* Statement */
+
+.compact-solutions__statement p {
+  margin: 0;
+
+  max-width: 440px;
+
+  text-align: right;
+
+  font-family:
+    'Cormorant Garamond',
+    Georgia,
+    serif;
+
+  font-size:
+    clamp(
+      23px,
+      2.6vw,
+      33px
+    );
+
+  line-height: 1;
+
+  font-weight: 500;
+
+  letter-spacing: -0.025em;
+
+  color: var(--cs-ink);
+}
+
+
+/* Highlight */
+
+.compact-solutions__statement p em {
+  font-style: italic;
+
+  font-weight: 600;
+
+  color: var(--cs-gold);
+}
+
+
+/* =========================================================
+   LARGE TABLET
+   901px - 1100px
+========================================================= */
+
+@media (max-width: 1100px) {
+
+  .compact-solutions__container {
+    width:
+      min(
+        1000px,
+        calc(100% - 42px)
+      );
+  }
+
+
+  .compact-solutions__heading {
+    gap: 45px;
+  }
+
+
+  .compact-service {
+    grid-template-columns:
+      25px
+      minmax(0, 1fr)
+      22px;
+
+    gap: 8px;
+
+    padding:
+      18px
+      14px;
+  }
+
+
+  .compact-service p {
+    font-size: 9px;
+  }
+
+
+  .compact-service__arrow {
+    width: 21px;
+    height: 21px;
+  }
+}
+
+
+/* =========================================================
+   TABLET
+   601px - 900px
+========================================================= */
+
+@media (max-width: 900px) {
+
+  .compact-solutions {
+    padding-top: 72px;
+  }
+
+
+  .compact-solutions__container {
+    width:
+      min(
+        720px,
+        calc(100% - 40px)
+      );
+  }
+
+
+  /* Heading */
+
+  .compact-solutions__heading {
+    grid-template-columns: 1fr;
+
+    gap: 25px;
+
+    align-items: start;
+  }
+
+
+  .compact-solutions__heading h2 {
+    font-size:
+      clamp(
+        48px,
+        8vw,
+        66px
+      );
+
+    line-height: 0.88;
+  }
+
+
+  .compact-solutions__intro {
+    max-width: 520px;
+  }
+
+
+  /* Services */
+
+  .compact-solutions__grid {
+    grid-template-columns:
+      repeat(
+        2,
+        minmax(0, 1fr)
+      );
+  }
+
+
+  .compact-service {
+    min-height: 106px;
+  }
+
+
+  /* Statement */
+
+  .compact-solutions__statement {
+    align-items: center;
+  }
+}
+
+
+/* =========================================================
+   MOBILE
+   <= 600px
+========================================================= */
+
+@media (max-width: 600px) {
+
+  .compact-solutions {
+    padding:
+      58px
+      0
+      48px;
+  }
+
+
+  .compact-solutions__container {
+    width:
+      calc(100% - 30px);
+  }
+
+
+  /* Header */
+
+  .compact-solutions__header {
+    margin-bottom: 28px;
+  }
+
+
+  /* Label */
+
+  .compact-solutions__label {
+    gap: 8px;
+
+    margin-bottom: 16px;
+
+    font-size: 8px;
+
+    letter-spacing: 0.19em;
+  }
+
+
+  .compact-solutions__label-line {
+    width: 25px;
+  }
+
+
+  /* Heading */
+
+  .compact-solutions__heading {
+    gap: 20px;
+
+    padding-bottom: 28px;
+  }
+
+
+  .compact-solutions__heading h2 {
+    font-size:
+      clamp(
+        43px,
+        13vw,
+        57px
+      );
+
+    line-height: 0.89;
+  }
+
+
+  /* Intro */
+
+  .compact-solutions__intro {
+    max-width: 100%;
+  }
+
+
+  .compact-solutions__intro-title {
+    margin-bottom: 10px;
+
+    font-size: 13px;
+
+    line-height: 1.42;
+  }
+
+
+  .compact-solutions__intro > p:last-child {
+    font-size: 10px;
+
+    line-height: 1.7;
+  }
+
+
+  /* Services */
+
+  .compact-solutions__grid {
+    grid-template-columns: 1fr;
+  }
+
+
+  .compact-service {
+    min-height: 94px;
+
+    padding:
+      16px
+      13px;
+
+    grid-template-columns:
+      24px
+      minmax(0, 1fr)
+      21px;
+
+    gap: 9px;
+  }
+
+
+  /* Number */
+
+  .compact-service__number {
+    font-size: 7.5px;
+
+    letter-spacing: 0.1em;
+  }
+
+
+  /* Title */
+
+  .compact-service h3 {
+    font-size: 13px;
+
+    line-height: 1.25;
+  }
+
+
+  /* Description */
+
+  .compact-service p {
+    margin-top: 5px;
+
+    font-size: 9px;
+
+    line-height: 1.45;
+  }
+
+
+  /* Arrow */
+
+  .compact-service__arrow {
+    width: 21px;
+    height: 21px;
+  }
+
+
+  .compact-service__arrow svg {
+    width: 12px;
+    height: 12px;
+  }
+
+
+  /* Footer */
+
+  .compact-solutions__footer {
+    align-items: flex-start;
+
+    flex-direction: column;
+
+    gap: 11px;
+
+    padding-top: 22px;
+  }
+
+
+  .compact-solutions__footer-label {
+    font-size: 7.5px;
+  }
+
+
+  .compact-solutions__types {
+    gap: 6px;
+
+    font-size: 9px;
+
+    line-height: 1.8;
+  }
+
+
+  .compact-project-type {
+    gap: 6px;
+  }
+
+
+  /* Bottom statement */
+
+  .compact-solutions__statement {
+    align-items: flex-start;
+
+    flex-direction: column;
+
+    gap: 16px;
+
+    margin-top: 32px;
+
+    padding-top: 22px;
+  }
+
+
+  .compact-solutions__statement > span {
+    font-size: 7.5px;
+  }
+
+
+  .compact-solutions__statement p {
+    max-width: 100%;
+
+    text-align: left;
+
+    font-size:
+      clamp(
+        23px,
+        7vw,
+        30px
+      );
+
+    line-height: 1.02;
+  }
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+   <= 400px
+========================================================= */
+
+@media (max-width: 400px) {
+
+  .compact-solutions {
+    padding-top: 52px;
+  }
+
+
+  .compact-solutions__container {
+    width:
+      calc(100% - 24px);
+  }
+
+
+  .compact-solutions__heading h2 {
+    font-size: 42px;
+  }
+
+
+  .compact-service {
+    min-height: 90px;
+
+    padding:
+      14px
+      11px;
+
+    grid-template-columns:
+      22px
+      minmax(0, 1fr)
+      20px;
+
+    gap: 8px;
+  }
+
+
+  .compact-service__number {
+    font-size: 7px;
+  }
+
+
+  .compact-service h3 {
+    font-size: 12px;
+  }
+
+
+  .compact-service p {
+    font-size: 8.5px;
+  }
+
+
+  .compact-service__arrow {
+    width: 20px;
+    height: 20px;
+  }
+
+
+  .compact-service__arrow svg {
+    width: 11px;
+    height: 11px;
+  }
+
+
+  .compact-solutions__types {
+    font-size: 8.5px;
+  }
+}
+
+
+/* =========================================================
+   VERY SMALL DEVICES
+   <= 340px
+========================================================= */
+
+@media (max-width: 340px) {
+
+  .compact-solutions {
+    padding:
+      48px
+      0
+      42px;
+  }
+
+
+  .compact-solutions__container {
+    width:
+      calc(100% - 20px);
+  }
+
+
+  .compact-solutions__heading h2 {
+    font-size: 38px;
+  }
+
+
+  .compact-service {
+    grid-template-columns:
+      20px
+      minmax(0, 1fr)
+      19px;
+
+    gap: 7px;
+
+    padding:
+      13px
+      9px;
+  }
+
+
+  .compact-service__number {
+    font-size: 6.5px;
+  }
+
+
+  .compact-service h3 {
+    font-size: 11px;
+  }
+
+
+  .compact-service p {
+    font-size: 8px;
+  }
+
+
+  .compact-service__arrow {
+    width: 19px;
+    height: 19px;
+  }
+
+
+  .compact-service__arrow svg {
+    width: 10px;
+    height: 10px;
+  }
+}
+
+
+/* =========================================================
+   ACCESSIBILITY
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+  .compact-service,
+  .compact-service__arrow {
+    transition: none;
+  }
+
+}

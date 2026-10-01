@@ -17,7 +17,8 @@ export const company = {
   email: 'creativehome202297@gmail.com',
   phone: '919644454455',
   displayPhone: '+91 96444 54455',
-  location: ['Cliffton corporate ab road indore',  'Raimilan, Singrauli, Madhya Pradesh'],
+  location: ['Cliffton corporate ab road indore'],
+  ocation: ['Raimilan, Singrauli, Madhya Pradesh'],
 };
 
 export const whatsappNumber = '919644454455';
@@ -26,12 +27,8 @@ export const whatsappLink = (message = 'Hello Creative Home Plan & Design, I wou
 
 export const navItems = [
   { label: 'Home', href: '#home' },
-  { label: 'About', href: '#about' },
   { label: 'Services', href: '#services' },
-  { label: 'House Plans', href: '#house-plans' },
-  { label: '3D Design', href: '#3d-design' },
   { label: 'Projects', href: '#projects' },
-  { label: 'Process', href: '#process' },
   { label: 'Contact', href: '#contact' },
 ];
 
