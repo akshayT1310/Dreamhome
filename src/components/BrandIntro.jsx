@@ -15,7 +15,7 @@ import {
   FileText,
   Layers3,
 } from 'lucide-react';
-import './BrandIntro.css';
+
 const services = [
   {
     no: '01',
