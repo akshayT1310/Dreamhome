@@ -32,7 +32,7 @@ const HeroSection = ({ onNavigate }) => {
           preload="auto"
         >
           <source
-            src="/assets/assets/video/homepagevideo.mp4"
+            src="/assets/assets/video/video1.mp4"
             type="video/mp4"
           />
         </video>
